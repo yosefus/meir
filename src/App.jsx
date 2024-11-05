@@ -1,28 +1,27 @@
-import React from 'react'
+import React from 'react';
 import {
   createBrowserRouter,
-  RouterProvider,
-  Route,
-  Link,
+  RouterProvider
 } from "react-router-dom";
-import Home from '../pages/Home';
-import Image from '../pages/Image';
+import Home from './pages/Home';
+import Image from './pages/Image';
+
 
 
 const router = createBrowserRouter([
   {
     index: true,
-    element: <Home/>,
+    element: <Home />,
   },
   {
     path: "img/:imageId",
-    element: <Image/>,
+    element: <Image />,
   },
 ])
 export default function App() {
   return (
     <div>
-        <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </div>
   )
 }
