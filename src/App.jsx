@@ -4,7 +4,7 @@ import {
   RouterProvider
 } from "react-router-dom";
 import Home from './pages/Home';
-import Image from './pages/Image';
+import ArtCard from './pages/ArtCard';
 
 
 
@@ -14,8 +14,8 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "img/:imageId",
-    element: <Image />,
+    path: "art/:imageId",
+    element: <ArtCard />,
   },
 ])
 export default function App() {
