@@ -16,7 +16,7 @@ const ChatInterface = () => {
   };
 
   return (
-    <div className="w-full max-w-md bg-white rounded-lg shadow-md">
+    <div className="rounded-lg shadow-md ">
       <div className="p-4 border-b">
         <span className="font-medium">Chat</span>
       </div>
